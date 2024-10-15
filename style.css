@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+
+.full{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+
+.nav1 {
+  width: 95px;
+  background-color: #07273D;
+  left: 0;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  justify-content: start;
+  position: fixed; 
+}
+
+.nav1 ul {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+}
+
+.nav1 ul li {
+  padding: 13px;
+  font-size: smaller;
+  width: 90px;
+  border-radius: 15px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.nav1 ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.nav1 ul li:hover {
+  color: #07273D;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.main {
+  margin-left: 95px; 
+  flex-grow: 1; 
+  display: flex;
+  width: 100vh;
+}
+.cart{
+  /*adding: 20px;*/
+  background-color: #ffffff;
+  width: 120vh;
+  border-right-color: #e5e7ea;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.pay{
+  background-color: #f1f3f6;
+  width: 80vh;
+  border-left-color: #e5e7ea;
+  display: flex;
+  flex-direction: column;
+}
+.searchflex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.book{
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.book:hover{
+  background-color:#397de4;
+  color:white ;
+  border: none !important;
+  box-shadow: 0 0 20px rgba(57,125,228,255), 0 0 30px rgba(3, 31, 242, 0.5);
+  padding: 8.8px !important;
+}
+.book:hover .material-symbols-outlined {
+  color: white !important; 
+}
+
+.cartsummary{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.carticons div{
+  border: 1px solid; 
+  padding: 8px; 
+  border-radius: 10px;
+  border-color: #afb4b7;
+  margin-left: 15px;
+}
+.carticons div span{
+  color: rgba(34, 31, 31, 0.751);
+}
+.carticons div{
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.carticons div:hover{
+  background-color:#397de4;
+  color:white ;
+  border: none;
+  padding: 8.8px !important;
+  box-shadow: 0 0 20px rgba(57,125,228,255), 0 0 30px rgba(3, 31, 242, 0.5);
+}
+.carticons div:hover .material-symbols-outlined {
+  color: white !important; 
+}
+.column p{
+  font-size: 14px;
+  color: #868b8e;
+}
+.column{
+  padding:10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.listitem {
+
+    flex-grow: 1; 
+    overflow-y: scroll; 
+    padding: 25px;
+    border: 1px solid #e7e9ec; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Style the scrollbar */
+.listitem::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+.listitem::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+.listitem::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Round edges of the thumb */
+}
+
+.listitem::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the thumb on hover */
+}
+
+.pay-flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bill-footer{
+  align-items: end;
+  bottom: 0;
+  position: fixed;
+  width: 80vh;
+
+}
+
+.btnhvr2:hover{
+  background-color:white !important;
+  color:#397de4 !important;
+  border: none;
+  padding: 8.8px !important;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgb(255, 255, 255);
+}
+
+.btnhvr1:hover{
+  background-color:#397de4;
+  color:white !important ;
+  border: none;
+  padding: 10px !important;
+  box-shadow: 0 0 20px rgba(57,125,228,255), 0 0 30px rgba(3, 31, 242, 0.5);
+}
+
+/* .btnhvr1 .hvr:hover{
+  color: white;
+} */
+.btnhvr1:hover .material-symbols-outlined {
+  color: white !important; 
+}
+
+.scrollfood::-webkit-scrollbar {
+  height: 5px; /* Set height for a horizontal scrollbar */
+  size: 1PX;
+}
+
+.scrollfood::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+.scrollfood::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Round edges of the thumb */
+}
+
+.scrollfood::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the thumb on hover */
+}
+
+.scrollfood {
+  scroll-behavior: smooth;
+  padding-bottom: 10px; /* Adjust padding to ensure space for scrollbar */
+  overflow-x: auto;
+}
+
+
+.scrollfood button{
+  padding: 10px;
+  font-size: larger;
+  width: 50vh;
+}
+
+.card{
+  height:30vh;
+}
+
+.card img{
+  height: 15vh;
+  width: 10 rem;
+}
+
+.card p{
+  color: #868b8e; 
+}
+
+
+.foodlist::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+.foodlist::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+.foodlist::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Round edges of the thumb */
+}
+
+.foodlist::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the thumb on hover */
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYON D</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="full">
+        <!-- Side Bar -->
+        <div class="nav1" alt="nav">
+            <img style="height: 70px; width: 70px;" src="logo1.png" alt="logo">
+            <ul>
+                <li><a href="#"><span class="material-symbols-outlined">dashboard</span><br>Dashboard</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">add_shopping_cart</span><br>Sales</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">receipt_long</span><br>Orders</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">account_box</span><br>Costumer</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">storefront</span><br>Items</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">widgets</span><br>Inventory</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">notifications</span><br>Alerts</a></li>
+            </ul>
+                <img style="padding-bottom: 10vh;" src="down logo.png" alt="downlogo">
+        </div>
+        
+        <div class="main">
+                
+                <!-- Cart -->
+                <div class="cart">
+                    <div style="padding: 20px;"><div class="searchflex">
+                        <!-- Search Box -->
+                        <div style="display: flex; border: 1px solid; padding: 8px; border-radius: 10px; width:105vh; border-color: #afb4b7;">
+                            <span style="color: #afb4b7;" class="material-symbols-outlined">search</span><input type="" placeholder="Search.." style="border:none; outline: none; margin-left:5px;">
+                        </div>
+                        <!-- BookImg -->
+                        <a href="#" onclick="toggleDivs()" style="text-decoration: none;" id="bookImage"><div class="book" style=" border: 1px solid; padding: 8px; border-radius: 10px;border-color: #afb4b7;"><span style="color: #397de4;padding: 5px;" class="material-symbols-outlined">menu_book</span></div></a>
+                    </div>
+
+                    <!-- Summary Flex -->
+
+                    <div class="cartsummary">
+                        <!-- Text -->
+                        <div>
+                            <h3 style="color: black; font-weight: bold;">Cart summary</h3>
+                            <div style="margin-top: 5px;"><p style="color: #afb4b7; display: inline;">Order ID :</p><h4 style="display: inline; font-weight: normal;">000001</h4></div>
+                        </div>
+                        <!-- Icons -->
+                        <div class="carticons" style="display: flex;">
+                            <a href="#" style="text-decoration: none;"><div><span class="material-symbols-outlined">person_pin</span></div></a>
+                            <a href="#" style="text-decoration: none;"><div><span class="material-symbols-outlined">translate</span></div></a>
+                            <a href="#" style="text-decoration: none;"><div><span class="material-symbols-outlined">more_vert</span></div></a>
+                        </div>
+                    </div></div>
+                    <!-- column name -->
+                    <div class="column" style="border-top:solid 1px #e7e9ec; left: 0;border-bottom:solid 1px #e7e9ec; display: flex; justify-content: space-between;">
+                        <p>Item</p>
+                        <p>Qty</p>
+                        <p>Amount(SAR)</p>
+                    </div>
+                
+                    <div class="listitem">
+                        <div style="display: flex;flex-direction: column; justify-content: center;align-items: center;">
+                            <img style="height: 90px; width: 90px;" src="emptycart.png" alt="">
+                            <h4>Cart is Empty</h4>
+                            <p style="color: #959a9c;">Scan Barcode or add items from catlog</p>
+                        </div>
+                    </div>
+
+                    <div id="mainfooter" style="background-color: #07273d; color: white; height: 10vh; position: fixed; bottom: 0; width: 118vh; display: none; justify-content: space-between;">
+                        <div style="display: flex; padding: 20px;"><span><h3 style="display: inline;">0</h3></span><span style="display: inline; font-size: 25px;"><h4 style="display: inline;">‎ ‎ Items</h4></span><span style="font-size: 40px; cursor: pointer;" class="material-symbols-outlined"> keyboard_arrow_up </span></div>
+                        <div style="display: flex; padding: 20px;"><span><h3 style="display: inline;">Total</h3></span><span style="display: inline;"><h4 style="display: inline; font-size: 30px;">‎ ‎ SAR</h4></span><span style="font-size: 28px;">‎ ‎ 0.00</span></div>
+                    </div>
+                
+                    
+                </div>
+
+
+
+
+                <div id="itemsList" style="display: none; padding: 20px;">
+                    <h3 style="color: black; font-weight: bold;">Items List</h3>
+                    <div class="item">
+                        <p>Item 1</p>
+                        <p>Price: SAR 10.00</p>
+                    </div>
+                    <div class="item">
+                        <p>Item 2</p>
+                        <p>Price: SAR 15.00</p>
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+                
+                
+                <!-- Payment Bar -->
+                <div class="pay" id="paymentSection">
+
+                    
+                                                                    <!-- Bill -->
+                                                                <div id="paymentsummary" style="position: relative; display: flex; flex-direction: column; justify-content: space-between; flex-grow:1;">
+                                                                    <div style="padding: 20px;">
+                                                                        <div class="pay-flex-row">
+                                                                            <div><h3 style="color: black; font-weight: bold;">Payment summary</h3></div>
+                                                                            <div style="display: flex; justify-content: space-around; padding: 6px;"><span style="display: inline; font-size: 15px; color: #818689;" class="material-symbols-outlined">receipt</span><span style="display: inline; font-size: 13px; color: #818689;">Ashwin</span></div>
+                                                                        </div>
+                                                                        <div class="pay-flex-row" style="margin-top: 15px;">
+                                                                            <div><span style="display: inline; font-size: 15px; color: #818689;">Sub total</span></div>
+                                                                            <div><h4 style="color: black; font-weight: bold;">SAR 0.00</h4></div>
+                                                                        </div>
+                                                                        <div class="pay-flex-row" style="margin-top: 15px;">
+                                                                            <div><span style="display: inline; font-size: 15px; color: #818689;">Taxable amount</span></div>
+                                                                            <div><h4 style="color: black; font-weight: bold;">SAR 0.00</h4></div>
+                                                                        </div>
+                                                                        <div class="pay-flex-row" style="margin-top: 15px;">
+                                                                            <div><span style="display: inline; font-size: 15px; color: #818689;">Total tax</span></div>
+                                                                            <div><h4 style="color: black; font-weight: bold;">SAR 0.00</h4></div>
+                                                                        </div>
+                                                                        <div><hr style="border-top: 1px solid; margin-top: 15px; color: #81868934;"></div>
+                                                                        <div class="pay-flex-row" style="margin-top: 15px;">
+                                                                            <div><span style="display: inline; font-size: 15px; color: #818689;">Grand total</span></div>
+                                                                            <div><h3 style="color: black; font-weight: bold;">SAR 0.00</h3></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--Bill Footer-->
+                                                                    <div style="margin-bottom: 9.9vh;">
+                                                                        <div style="border: 1px solid #81868934; border-left: none; border-right: none; padding: 15px;">
+                                                                            <div style="display: flex; justify-content: center;  padding: 6px; color: #07273d;"><a href="#" style="text-decoration: none;"><span style="display: inline; font-size: 18px; color: #07273d;" class="material-symbols-outlined">add_notes</span><span style="display: inline; color: #07273d;">‎ ‎ Add notes</span></a></div>
+                                                                        </div>
+                                                                        <div style="display: flex; justify-content: space-evenly; border: 1px solid #81868934; border-left: none; border-right: none; padding: 20px;">
+                                                                            <a href="#" style="text-decoration: none;"><div style="display: inline-flex; border: solid 1px #07273d;; border-radius: 5px; padding: 10px; color: #07273d;"><span style="font-size: 25px; display: inline; color: #07273d;" class="material-symbols-outlined">location_home</span><span style="font-size: 20px; display: inline; color: #07273d;">‎ ‎ Customer</span></div></a>
+                                                                            <a href="#" style="text-decoration: none;"><div style="display: inline-flex; border: solid 1px #07273d;; border-radius: 5px; padding: 10px; color: #07273d;"><span style="font-size: 25px; display: inline; color: #07273d;" class="material-symbols-outlined"> redeem </span><span style="font-size: 20px; display: inline; color: #07273d;">‎ ‎ Coupon</span></div></a>
+                                                                            <a href="#" style="text-decoration: none;"><div style="display: inline-flex; border: solid 1px #07273d;; border-radius: 5px; padding: 10px; color: #07273d;"><span style="font-size: 25px; display: inline; color: #07273d;" class="material-symbols-outlined"> percent </span><span style="font-size: 20px; display: inline; color: #07273d;">‎ ‎ Discount</span></div></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Items -->
+                                                                <div id="itemshow" style="display: none;">
+                                                                    <div style="display: flex; justify-content: space-between; padding: 20px;">
+                                                                        <div><span><h4>Catalog</h4></span></div>
+                                                                        <div style="display: flex; justify-content: space-between; width: 14vh; padding-right: 2vh;">
+                                                                            <span style="font-size: 35px; cursor: pointer;" class="material-symbols-outlined"> more_vert </span>
+                                                                            <span onclick="returndivs()"  style="font-size: 35px; cursor: pointer;" class="material-symbols-outlined"> close </span>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="scrollfood" style="padding-left: 20px; padding-right: 20px; display: flex; gap: 10px; width: 100%; height: auto; overflow-x: auto; white-space: nowrap; scroll-behavior: smooth;">
+                                                                        <button class="btn btn-primary" type="button">All</button>
+                                                                        <button style="background-color: white; color: #07273d; border-color: #afb4b7;" class="btn btn-primary" type="button">Burger</button>
+                                                                        <button style="background-color: white; color: #07273d; border-color: #afb4b7;" class="btn btn-primary" type="button">Favorites</button>
+                                                                        <button style="background-color: white; color: #07273d; border-color: #afb4b7;" class="btn btn-primary" type="button">Juices</button>
+                                                                        <button style="background-color: white; color: #07273d; border-color: #afb4b7;" class="btn btn-primary" type="button">Sandwich</button>
+                                                                        <button style="background-color: white; color: #07273d; border-color: #afb4b7;" class="btn btn-primary" type="button">Pizza</button>
+                                                                        <button style="background-color: white; color: #07273d; border-color: #afb4b7;" class="btn btn-primary" type="button">Fries</button>
+                                                                    </div>
+
+                                                                    <!-- Food list -->
+                                                                    
+                                                                    <div class="foodlist" style="padding: 20px; display: flex; flex-direction: column; overflow-y: scroll; height: 70vh; gap: 20px;">
+
+                                                                        <!-- First Row -->
+
+                                                                        <div style="display: flex; gap: 20px;">
+                                                                            
+                                                                            <div class="card" style="width: 18rem;">
+                                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg" class="card-img-top" alt="...">
+                                                                                <div class="card-body">
+                                                                                  <h6 class="card-title">Chicken BBQ Pizza</h6>
+                                                                                  <p class="card-text">2 varients</p>
+                                                                                </div>
+                                                                              </div>
+
+
+                                                                            <div class="card" style="width: 18rem;">
+                                                                                <img src="https://images.themodernproper.com/billowy-turkey/production/posts/2022/Homemade-French-Fries_8.jpg?w=1200&h=1200&q=60&fm=jpg&fit=crop&dm=1662474181&s=3b2f5e70873746d98cd312c67bc50bfe" class="card-img-top" alt="...">
+                                                                                <div class="card-body">
+                                                                                  <h6 class="card-title">French Fries Combo</h6>
+                                                                                  <p class="card-text"></p>
+                                                                                </div>
+                                                                              </div>
+
+
+                                                                            <div class="card" style="width: 18rem;">
+                                                                                <img src="https://www.acouplecooks.com/wp-content/uploads/2020/05/Pan-Pizza-020.jpg" class="card-img-top" alt="...">
+                                                                                <div class="card-body">
+                                                                                  <h6 class="card-title">Pan Pizza</h6>
+                                                                                  <p class="card-text">2 varients</p>
+                                                                                </div>
+                                                                              </div>
+
+
+                                                                        </div>
+
+                                                                        <!-- Second Row -->
+
+                                                                        <div style="display: flex; gap: 20px;">
+                                                                            
+                                                                            <div class="card" style="width: 18rem;">
+                                                                                <img src="https://www.pipercooks.com/wp-content/uploads/2022/06/oyster-mushroom-po-boys-sq.jpg" class="card-img-top" alt="...">
+                                                                                <div class="card-body">
+                                                                                  <h6 class="card-title">Mushroom sandwich</h6>
+                                                                                  <p class="card-text">2 varients</p>
+                                                                                </div>
+                                                                              </div>
+
+
+                                                                            <div class="card" style="width: 18rem;">
+                                                                                <img src="https://insanelygoodrecipes.com/wp-content/uploads/2022/10/A-Glass-of-Watermelon-Smoothie-with-Fresh-Fruits.jpg" class="card-img-top" alt="...">
+                                                                                <div class="card-body">
+                                                                                  <h6 class="card-title">Watermelon Juice</h6>
+                                                                                  <p class="card-text"></p>
+                                                                                </div>
+                                                                              </div>
+
+
+                                                                            <div class="card" style="width: 18rem;">
+                                                                                <img src="https://www.seriouseats.com/thmb/YBUAG17xy1nWYGPmFcJKeoODTzk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cheese-sauce-for-cheese-fries-and-nachos-hero-01-e6ccf966688c43ec8025cf9a19678423.jpg" class="card-img-top" alt="...">
+                                                                                <div class="card-body">
+                                                                                  <h6 class="card-title">Plain nachos</h6>
+                                                                                  <p class="card-text">2 varients</p>
+                                                                                </div>
+                                                                              </div>
+
+
+                                                                        </div>
+
+                                                                        <!-- Third Row -->
+
+                                                                        <div style="display: flex; gap: 20px;">
+                                                                            
+                                                                            <div class="card" style="width: 18rem;">
+                                                                                <img src="https://thecozyapron.com/wp-content/uploads/2020/03/chicken-nachos_thecozyapron_1.jpg" class="card-img-top" alt="...">
+                                                                                <div class="card-body">
+                                                                                  <h6 class="card-title">Mexican nachos with slasa</h6>
+                                                                                  <p class="card-text"></p>
+                                                                                </div>
+                                                                              </div>
+
+
+                                                                            <div class="card" style="width: 18rem;">
+                                                                                <img src="https://4.imimg.com/data4/VT/LQ/MY-31657999/grape-juice-500x500.jpg" class="card-img-top" alt="...">
+                                                                                <div class="card-body">
+                                                                                  <h6 class="card-title">Grape juice</h6>
+                                                                                  <p class="card-text">2 varients</p>
+                                                                                </div>
+                                                                              </div>
+
+
+                                                                            <div class="card" style="width: 18rem;">
+                                                                                <img src="https://images.healthshots.com/healthshots/en/uploads/2024/05/13083017/mango-juice-1.jpg" class="card-img-top" alt="...">
+                                                                                <div class="card-body">
+                                                                                  <h6 class="card-title">Mango juice with salad</h6>
+                                                                                  <p class="card-text"></p>
+                                                                                </div>
+                                                                              </div>
+
+
+                                                                        </div>
+
+
+
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                                    <!-- Print-button -->
+                                                                    <div class="bill-footer">
+                                                                        <div style="display: flex; justify-content: space-evenly; border: 1px solid #81868934; border-left: none; border-right: none; padding: 10px;">
+                                                                            <a href="#" style="text-decoration: none;"><div style="display: inline-flex; border: solid 1px #397de4; border-radius: 5px; padding: 10px;"><span style="font-size: 25px; display: inline; color: #397de4;" class="material-symbols-outlined"> print </span><span style="font-size: 20px; display: inline; color: #397de4;">‎ ‎ Print bill</span></div></a>
+                                                                            <button style="width: 60%;" class="btn btn-primary" type="button">Proceed to payment</button>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+        </div>
+
+</div>
+</body>
+<script src="https://kit.fontawesome.com/95337b6a2d.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
+
+
